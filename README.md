@@ -2,8 +2,12 @@
 
 Aplikasi kasir desktop berbasis Java Swing dengan fitur lengkap untuk mengelola penjualan, produk, dan transaksi.
 
-![Java](https://img.shields.io/badge/Java-27-orange)
+![Java](https://img.shields.io/badge/Java-11+-orange)
 ![Status](https://img.shields.io/badge/Status-Ready-green)
+![License](https://img.shields.io/badge/License-MIT-blue)
+![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
+
+🔗 **GitHub Repository:** [https://github.com/Fatichulardhi17/KasirKu](https://github.com/Fatichulardhi17/KasirKu)
 
 ---
 
@@ -226,6 +230,30 @@ Project ini sudah production-ready dengan:
 - [ ] Migrate from CSV to SQLite
 - [ ] Add internationalization (i18n)
 - [ ] Add reporting features (daily/monthly sales)
+
+---
+
+## 🔗 Repository
+
+**GitHub:** [https://github.com/Fatichulardhi17/KasirKu](https://github.com/Fatichulardhi17/KasirKu)
+
+### Clone Repository:
+```bash
+git clone https://github.com/Fatichulardhi17/KasirKu.git
+cd KasirKu
+```
+
+### Quick Start Setelah Clone:
+```bash
+# Windows
+start.bat
+
+# Atau buat JAR
+create-jar.bat
+# Lalu double-click KasirKu.vbs
+```
+
+Lihat [GIT_GUIDE.md](GIT_GUIDE.md) untuk workflow Git lengkap.
 
 ---
 
