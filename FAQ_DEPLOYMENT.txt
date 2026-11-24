@@ -1,0 +1,215 @@
+════════════════════════════════════════════════════════════════
+   ❓ FAQ - PERTANYAAN SEPUTAR DEPLOYMENT & HOSTING
+════════════════════════════════════════════════════════════════
+
+
+Q: Apakah aplikasi ini perlu di-hosting?
+A: ❌ TIDAK! Ini aplikasi DESKTOP, bukan web.
+   Jalan di komputer lokal, tidak perlu internet/hosting.
+
+
+Q: Bagaimana cara pakai di toko saya?
+A: ✅ Sangat mudah:
+   1. Copy folder ini ke komputer kasir
+   2. Install Java di komputer kasir
+   3. Double-click start.bat
+   4. Selesai!
+
+
+Q: Berapa biaya bulanan untuk pakai aplikasi ini?
+A: 💰 Rp 0 (GRATIS SELAMANYA!)
+   - Tidak ada biaya hosting
+   - Tidak ada biaya lisensi
+   - Tidak ada biaya maintenance
+
+
+Q: Data disimpan dimana?
+A: 📁 Di folder "data/" di komputer Anda
+   - data/produk.csv
+   - data/transaksi.csv
+   - data/pengaturan.properties
+
+
+Q: Apakah perlu koneksi internet?
+A: ❌ TIDAK PERLU!
+   Aplikasi jalan offline 100%.
+
+
+Q: Bisa diakses dari HP/tablet?
+A: ❌ Tidak bisa (saat ini)
+   Ini aplikasi desktop untuk PC/laptop.
+   
+   Kalau mau akses dari HP, butuh upgrade jadi web app.
+   (Butuh development 1-2 bulan + hosting ~Rp 100k/bln)
+
+
+Q: Bisa dipakai di banyak komputer kasir?
+A: ⚠️ Bisa, tapi dengan catatan:
+   
+   OPSI 1: Install terpisah di setiap komputer
+   - Setiap kasir punya data sendiri
+   - Tidak sync otomatis
+   
+   OPSI 2: Pakai shared folder (tidak direkomendasikan)
+   - Rawan data corrupt
+   - Kalau 2 kasir checkout bareng bisa error
+   
+   OPSI 3: Upgrade ke database (REKOMENDASI)
+   - Semua kasir connect ke 1 database
+   - Aman untuk concurrent access
+   - Butuh setup 2-3 hari
+
+
+Q: Kalau komputer rusak, data hilang?
+A: ⚠️ Ya, kalau tidak di-backup!
+   
+   SOLUSI:
+   ✅ Backup otomatis via OneDrive/Google Drive
+   ✅ Backup manual copy folder "data/"
+   ✅ Setup Windows Task Scheduler untuk auto-backup
+   
+   Lihat: CARA_DEPLOY.md bagian "Backup & Disaster Recovery"
+
+
+Q: Bagaimana cara update aplikasi?
+A: 1. Backup folder "data/" dulu
+   2. Download/copy aplikasi versi baru
+   3. Paste folder "data/" lama ke aplikasi baru
+   4. Jalankan ulang
+
+
+Q: Bisa print struk ke printer thermal?
+A: ✅ Bisa!
+   1. Install driver printer thermal
+   2. Set as default printer di Windows
+   3. Klik "Cetak Struk" di aplikasi
+
+
+Q: Berapa lama setup aplikasi ini?
+A: ⏱️ 15-30 menit untuk pertama kali:
+   - 10 menit install Java
+   - 5 menit copy & setup aplikasi
+   - 10 menit isi data produk & setting toko
+
+
+Q: Apakah legal/aman untuk bisnis?
+A: ✅ Legal dan aman!
+   - Aplikasi lokal, data di komputer Anda
+   - Tidak ada tracking/monitoring
+   - Tidak ada share data ke pihak ketiga
+   - Source code terbuka (bisa di-audit)
+
+
+Q: Kalau mau pakai di 10 toko berbeda?
+A: 2 pilihan:
+   
+   OPSI 1: Install terpisah (DATA TIDAK SYNC)
+   - Tiap toko install sendiri
+   - Data masing-masing toko terpisah
+   - Biaya: Rp 0
+   
+   OPSI 2: Central database + Web App (DATA SYNC)
+   - Semua toko connect ke 1 server cloud
+   - Data tersinkronisasi
+   - Butuh development 1-2 bulan
+   - Biaya: Rp 200-500k/bulan
+
+
+Q: Aplikasi lemot atau nge-hang?
+A: Troubleshoot:
+   ✅ Cek file data/transaksi.csv ukurannya
+      Kalau >10MB, arsip transaksi lama
+   ✅ Restart aplikasi setiap hari
+   ✅ Pastikan RAM komputer min 4GB
+   ✅ Java versi 11+
+
+
+Q: Bisa ganti bahasa ke Inggris?
+A: ❌ Saat ini hanya Bahasa Indonesia
+   Kalau mau multi-bahasa, butuh development 1-2 hari
+
+
+Q: Bisa laporan penjualan harian/bulanan?
+A: ⚠️ Saat ini: manual via menu Riwayat
+   
+   Kalau mau auto-report (PDF/Excel):
+   - Butuh development 3-5 hari
+   - Tambah fitur export & reporting
+
+
+Q: Apakah ada support teknis?
+A: 📚 Ada dokumentasi lengkap:
+   - MULAI_DISINI.txt
+   - README.md
+   - CARA_MENJALANKAN.md
+   - CARA_DEPLOY.md
+   
+   Source code tersedia, bisa dimodifikasi sendiri.
+
+
+Q: Bagaimana cara distribusi ke customer?
+A: 3 cara:
+   
+   1. Copy folder ke flashdisk
+   2. Zip & kirim via email/WhatsApp
+   3. Upload ke Google Drive, share link
+   
+   Include file: MULAI_DISINI.txt agar mudah dipahami
+
+
+Q: Rekomendasi spesifikasi komputer?
+A: Minimum:
+   - Windows 7/10/11
+   - Intel Core i3 / AMD equivalent
+   - RAM 4GB
+   - HDD 100MB free space
+   
+   Recommended:
+   - Windows 10/11
+   - Intel Core i5+
+   - RAM 8GB
+   - SSD
+
+
+Q: Bisa pakai di Mac/Linux?
+A: ✅ Bisa! Java cross-platform
+   
+   Tapi script .bat hanya untuk Windows.
+   Di Mac/Linux, jalankan manual:
+   
+   ./build.sh      (compile)
+   java -cp out kasir.Main   (run)
+
+
+════════════════════════════════════════════════════════════════
+   📊 RINGKASAN REKOMENDASI
+════════════════════════════════════════════════════════════════
+
+🏪 TOKO KECIL (1-2 kasir):
+   → Deploy standalone di 1 komputer
+   → Biaya: Rp 0/bulan
+   → Setup: 15 menit
+
+🏬 TOKO MENENGAH (3-5 kasir):
+   → Upgrade ke database lokal (PostgreSQL/MySQL)
+   → Biaya: Rp 0/bulan
+   → Setup: 2-3 hari
+
+🏢 MULTI-TOKO / CHAIN:
+   → Upgrade ke web app + cloud
+   → Biaya: Rp 200-500k/bulan
+   → Setup: 1-2 bulan development
+
+
+════════════════════════════════════════════════════════════════
+   📞 BANTUAN LEBIH LANJUT
+════════════════════════════════════════════════════════════════
+
+   Baca dokumentasi lengkap di:
+   
+   📄 CARA_DEPLOY.md
+   📄 CARA_MENJALANKAN.md
+   📄 README.md
+
+
+════════════════════════════════════════════════════════════════

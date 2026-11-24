@@ -1,0 +1,111 @@
+════════════════════════════════════════════════════════
+   🚀 CARA MENJALANKAN APLIKASI KASIR - SUPER SIMPLE!
+════════════════════════════════════════════════════════
+
+📌 LANGKAH 1: PASTIKAN JAVA SUDAH TERINSTALL
+   
+   Buka Command Prompt, ketik:
+   
+      java -version
+   
+   Harus muncul versi Java. Jika belum, download dari:
+   https://adoptium.net/
+
+
+📌 LANGKAH 2: JALANKAN APLIKASI
+
+   Ada 3 cara (pilih salah satu):
+
+   ✅ CARA PALING MUDAH:
+      
+      Double-click file: start.bat
+      
+      (atau klik kanan → Open)
+
+   
+   ✅ CARA KEDUA:
+      
+      Buka Command Prompt di folder ini, ketik:
+      
+      start.bat
+
+
+   ✅ CARA KETIGA (Original):
+      
+      run.bat
+
+
+📌 LANGKAH 3: GUNAKAN APLIKASI
+
+   Window GUI akan muncul dengan:
+   
+   - Kiri: Daftar produk (klik untuk tambah ke keranjang)
+   - Kanan: Keranjang belanja
+   - Tombol BAYAR: Untuk checkout
+   
+   Keyboard shortcuts:
+   - F2 = Cari produk
+   - F9 = Bayar
+   - F4 = Kosongkan keranjang
+   - Delete = Hapus item
+
+
+════════════════════════════════════════════════════════
+   🐛 TROUBLESHOOTING
+════════════════════════════════════════════════════════
+
+❌ Error "java is not recognized"
+   → Java belum terinstall
+   → Download: https://adoptium.net/
+
+❌ Aplikasi tidak muncul
+   → Jalankan dari Command Prompt (bukan double-click)
+   → Lihat pesan error yang muncul
+   → Coba: rmdir /s /q out
+            build.bat
+            start.bat
+
+❌ Error saat kompilasi
+   → Pastikan pakai JDK (bukan hanya JRE)
+   → Cek javac -version
+
+❌ File data corrupt
+   → Hapus folder 'data'
+   → Jalankan ulang aplikasi
+   → Data contoh akan dibuat otomatis
+
+
+════════════════════════════════════════════════════════
+   📚 DOKUMENTASI LENGKAP
+════════════════════════════════════════════════════════
+
+   README.md              - Overview project
+   CARA_MENJALANKAN.md    - Panduan detail lengkap
+   CHANGELOG_FIXES.md     - Log perbaikan bug
+
+
+════════════════════════════════════════════════════════
+   ✨ FITUR APLIKASI
+════════════════════════════════════════════════════════
+
+   ✅ Tambah produk ke keranjang
+   ✅ Edit quantity
+   ✅ Diskon per transaksi
+   ✅ PPN otomatis
+   ✅ Multi payment: Tunai, QRIS, Debit, Kredit
+   ✅ Hitung kembalian otomatis
+   ✅ Cetak struk
+   ✅ Kelola produk (tambah/edit/hapus)
+   ✅ Riwayat transaksi lengkap
+   ✅ Pencarian produk
+   ✅ Filter kategori
+   ✅ Validasi stok real-time
+
+
+════════════════════════════════════════════════════════
+
+   🎉 SELAMAT MENCOBA!
+   
+   Jika ada pertanyaan, baca CARA_MENJALANKAN.md
+   
+════════════════════════════════════════════════════════

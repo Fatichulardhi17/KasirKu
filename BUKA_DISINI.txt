@@ -1,0 +1,69 @@
+╔════════════════════════════════════════════════════════╗
+║                                                        ║
+║          🏪 APLIKASI KASIR - KASIRKU 🏪               ║
+║                                                        ║
+╚════════════════════════════════════════════════════════╝
+
+🚀 CARA BUKA APLIKASI (Pilih salah satu):
+
+┌────────────────────────────────────────────────────────┐
+│  1. PALING MUDAH (Recommended) ⭐⭐⭐⭐⭐              │
+│                                                        │
+│     Double-click file: KasirKu.vbs                     │
+│                                                        │
+│     ✅ Tanpa console window                           │
+│     ✅ Langsung buka GUI                              │
+│     ✅ Paling clean                                   │
+└────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────┐
+│  2. PAKAI JAR (Portable) ⭐⭐⭐⭐                      │
+│                                                        │
+│     Double-click file: KasirKu.jar                     │
+│     atau                                               │
+│     Double-click file: KasirKu.bat                     │
+│                                                        │
+│     ✅ File single executable                         │
+│     ✅ Bisa dicopy ke komputer lain                   │
+└────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────┐
+│  3. CARA LAMA (Dengan Console) ⭐⭐⭐                  │
+│                                                        │
+│     Double-click file: start.bat                       │
+│                                                        │
+│     ✅ Otomatis compile                               │
+│     ✅ Lihat log & error                              │
+└────────────────────────────────────────────────────────┘
+
+
+📚 DOKUMENTASI LENGKAP:
+
+   📄 CARA_BUKA_APLIKASI.md   - Panduan detail cara buka
+   📄 README.md               - Dokumentasi lengkap aplikasi
+   📄 CARA_MENJALANKAN.md     - Troubleshooting & tips
+
+
+💡 TIP: 
+   Buat shortcut KasirKu.vbs di desktop untuk akses cepat!
+
+
+🎯 QUICK START UNTUK PEMULA:
+
+   1. Double-click "KasirKu.vbs"
+   2. Aplikasi akan terbuka
+   3. Selesai! 🎉
+
+
+⚠️ JIKA ADA MASALAH:
+
+   - Pastikan Java JDK 11+ sudah terinstall
+   - Cek dengan: java -version
+   - Baca file: CARA_BUKA_APLIKASI.md
+
+
+════════════════════════════════════════════════════════
+
+Made with ❤️ using Java Swing
+
+Selamat menggunakan! 🎉

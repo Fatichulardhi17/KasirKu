@@ -1,0 +1,7 @@
+invoice;produk_id;nama;qty;harga;subtotal
+INV-20261123-0001;9;Ayam Geprek;2;28000;56000
+INV-20261123-0002;2;Chocolatos Matcha;1;5000;5000
+INV-20261124-0001;2;Chocolatos Matcha;1;5000;5000
+INV-20261124-0001;5;Mie Goreng;1;6000;6000
+INV-20261124-0002;4;Takoyaki;1;5000;5000
+INV-20261124-0002;3;Kentang Goreng;1;10000;10000
